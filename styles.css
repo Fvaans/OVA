@@ -1,0 +1,139 @@
+/* Estilos para la barra de navegación */
+
+
+header nav {
+    background-image: url('img/navbar.png'); /* Ruta de tu imagen de fondo */
+    background-size: 100% auto; /* La imagen cubrirá todo el área del nav */
+    background-position: center; /* La imagen se posicionará centrada */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    padding: 10px 0; /* Espaciado interno */
+    /* Puedes ajustar otros estilos según sea necesario */
+    font-family: 'Super Creamy', sans-serif; /* Tipo de letra */
+    /* Puedes ajustar otros estilos según sea necesario */
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center; /* Centrar los elementos de la lista */
+    font-family: 'Super Creamy', sans-serif; /* Tipo de letra */
+    /* Puedes ajustar otros estilos según sea necesario */
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px; /* Espacio horizontal entre elementos */
+    position: relative; /* Posicionamiento relativo */
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* Quita el margen derecho del último elemento */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+    font-family: 'Super Creamy', sans-serif; /* Tipo de letra */
+    /* Puedes ajustar otros estilos según sea necesario */
+}
+
+header nav ul li a:hover {
+    background-color: #266bcb; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0; /* Ajusta la posición del menú desplegable */
+    top: 100%; /* Ajusta la posición del menú desplegable */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Super Creamy', sans-serif; /* Tipo de letra */
+    /* Puedes ajustar otros estilos según sea necesario */
+}
+
+/* Estilos para el reproductor de vídeo */
+#videoPlayer {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para las imágenes dentro de la clase "image-container" */
+.image-container img {
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    display: block; /* Asegura que la imagen sea un bloque para el margen automático */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    display: flex; /* Utiliza flexbox para centrar verticalmente */
+    flex-direction: column; /* Apila los elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    font-family: 'Super Creamy', sans-serif;
+}
+
+/* Estilos para el contenido adicional */
+.content {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-image: url('img/nav.webp'); /* Agrega la imagen de fondo al footer */
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño del footer */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    color: #000000; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Lo coloca en la parte inferior */
+    width: 100%; /* Ancho completo */
+    padding: 20px 0; /* Espaciado interno */
+    font-family: 'Super Creamy', sans-serif; /* Tipo de letra */
+    /* Puedes ajustar otros estilos según sea necesario */
+}
+
+footer .pagination {
+    display: inline-block;
+    margin: 0 100px; /* Espacio horizontal entre los números de página */
+    text-decoration: none;
+    font-size: 18px; /* Tamaño de la fuente */
+    transition: color 0.3s; /* Transición suave del color */
+    font-family: 'Super Creamy', sans-serif; /* Tipo de letra */
+    /* Puedes ajustar otros estilos según sea necesario */
+}
+
+footer .pagination a:hover,
+footer .pagination a:focus {
+    color: rgb(30, 136, 189); /* Cambio de color al pasar el cursor o al hacer clic */
+    background-color: rgba(0, 0, 0, 0.2); /* Color de fondo semi-transparente al pasar el cursor */
+    font-family: 'Super Creamy', sans-serif; /* Tipo de letra */
+    /* Puedes ajustar otros estilos según sea necesario */
+}
